@@ -1,0 +1,78 @@
+//IMPORT
+@import 'media/fonts/satoshi.css';
+@import 'scss/reset.scss';
+
+@font-face {
+    font-family: 'NIKEA';
+    src: url(media/NIKEA.otf);
+}
+
+// VARIABLES
+$background-color: #151515;
+$main-yellow: #FFB600;
+$main-blue: #3888FF;
+$main-purple: #6F00FF;
+
+//ALL
+.page--main{
+    background: $background-color;
+    margin: 30px 310px 0;
+}
+
+.caption{
+    font-family: 'NIKEA';
+}
+
+.caption--white{
+    color: white;
+}
+
+.caption--yellow{
+    color: $main-yellow;
+}
+
+// HEADER
+.header{
+    height: 100vh;
+    display: grid;
+}
+
+.topboard{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo, .autorization{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 70px;
+    width: 175px;
+    &__image{
+        height: 70px;
+        width: 80px;
+    }
+    &__text{
+        margin-left: 7px;
+        height: 30px;
+    }
+    &__word{ 
+        font-family: 'NIKEA';
+        color: white;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+    &__word + &__word{
+        color: $main-yellow
+    }
+}   
+
+.button
