@@ -12,6 +12,7 @@ $background-color: #151515;
 $main-yellow: #FFB600;
 $main-blue: #3888FF;
 $main-purple: #6F00FF;
+$gradient-def: linear-gradient(108.89deg, #FFB600 0%, #FF0091 52.19%, #6F00FF 101.21%);
 
 //ALL
 .radial-gradient--orange{
@@ -25,7 +26,12 @@ $main-purple: #6F00FF;
     transform: rotate(-30deg);
 }
 .pink-cyrcle{
-    
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid;
+    // border-color: $gradient-def;
+    border-color: pink;
+
 }
 
 .page--main{
@@ -54,7 +60,7 @@ $main-purple: #6F00FF;
 // HEADER
 
 .background-layer{
-    .radial-gradient--orange, .radial-gradient--purple{
+    .radial-gradient--orange, .radial-gradient--purple, .pink-cyrcle{
         width: 39vw;
         height: 39vw;
         z-index: -1;
@@ -71,6 +77,10 @@ $main-purple: #6F00FF;
     .radial-gradient--purple{
         top: 100px;
         right: -150px;
+    }
+    .pink-cyrcle{
+        right: -250px;
+        top: 50px;
     }
 }
 
