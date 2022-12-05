@@ -17,13 +17,17 @@
     }
 }
 .benefit {
-    max-width: 515px;
+    // max-width: 515px;
+    width: 28vw;
     border-radius: 20px;
     padding: 0 18px 42px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    & + &{
+        margin-left: 100px;
+    }
     &:nth-child(1){
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 33%, #FFB600 140%);
     }
@@ -34,8 +38,8 @@
         background: linear-gradient(180deg, rgba(21, 21, 21, 0) 33%, #EE495F 140%);
     }
     &__img {
-        width: 374px;
-        height: 374px;
+        width: 20vw;
+        height: 20vw;
         margin-top: -25px;
     }
     &__text{
