@@ -1,0 +1,69 @@
+
+// ANALYSIS==================================================================
+.analysis{
+    margin-top: 150px;
+    &__container{
+        margin: 0 165px;
+    }
+    &__text{
+        max-width: 675px;
+        margin: 10px auto 0;
+    }
+}
+.cylinder{
+    width: 260px;
+    height: 430px;
+    position: relative;
+    top: -2vw;
+    &__layer{
+        position: relative;
+        width: 260px;
+        height: 228px;
+    }
+    &__layer:nth-child(3){
+        top: -480px;
+    }
+    &__layer:nth-child(2){
+        top: -130px;
+    }
+    &__layer:nth-child(1){
+        top: 215px;
+    }
+}
+
+.scheme{
+    display: flex;
+}
+
+.signature_list{
+    width: 100%;
+    padding-top: 70px;
+}
+.signature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & + &{
+        margin-top: 30px;
+    }
+    &__arrow{
+        flex-basis: 15%;
+        width: auto;
+        height: 0;
+        border: 1px solid white;
+    }
+    &__arrow ~ &__arrow{
+        flex-grow: 1;
+        margin-left: 15px;
+    }
+    &__text-wrapper{
+        padding: 5px;
+        text-align: center;
+        background: #151515;
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+    }
+    &__icon{
+        margin-left: 15px;
+    }
+}
