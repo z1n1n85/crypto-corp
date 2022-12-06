@@ -1,53 +1,25 @@
 
 // ANALYSIS==================================================================
-.analysis{
-    margin-top: 150px;
-    &__container{
-        margin: 0 165px;
-    }
-    &__text{
-        max-width: 675px;
-        margin: 10px auto 0;
-    }
-}
+
 .cylinder{
-    width: 260px;
-    height: 430px;
     position: relative;
-    top: -2vw;
     &__layer{
         position: relative;
-        width: 260px;
-        height: 228px;
-    }
-    &__layer:nth-child(3){
-        top: -480px;
-    }
-    &__layer:nth-child(2){
-        top: -130px;
-    }
-    &__layer:nth-child(1){
-        top: 215px;
     }
 }
-
 .scheme{
     display: flex;
+    align-items: center;
 }
-
 .signature_list{
     width: 100%;
-    padding-top: 70px;
+    height: fit-content;
 }
 .signature{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    & + &{
-        margin-top: 30px;
-    }
     &__arrow{
-        flex-basis: 15%;
         width: auto;
         height: 0;
         border: 1px solid white;
@@ -55,6 +27,9 @@
     &__arrow ~ &__arrow{
         flex-grow: 1;
         margin-left: 15px;
+    }
+    &__text{
+        width: fit-content;
     }
     &__text-wrapper{
         padding: 5px;
@@ -65,5 +40,123 @@
     }
     &__icon{
         margin-left: 15px;
+    }
+}
+@media screen and (min-width: $tablet-screen) {
+    .analysis{
+        margin-top: 150px;
+        &__container{
+            margin: 0 165px;
+        }
+        &__text{
+            max-width: 675px;
+            margin: 10px auto 0;
+        }
+    }
+    .scheme{
+        height: 490px;
+    }
+    .cylinder{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 260px;
+        height: 430px;
+        top: -2vw;
+        &__layer{
+            width: 260px;
+            height: 228px;
+            margin-bottom: -130px;
+        }
+        &__layer:nth-child(1){
+            margin: 0;
+        }
+    }
+    .signature_list{
+        margin-top: -30px;
+    }
+    .signature{
+        & + &{
+            margin-top: 30px;
+        }
+        &__arrow{
+            flex-basis: 15%;
+        }
+    }
+}
+@media screen and (max-width: $tablet-screen) {
+    .analysis{
+        margin-top: 120px;
+        &__container{
+            margin: 0 30px;
+        }
+        &__text{
+            max-width: 340px;
+            margin: 15px auto 0;
+        }
+    }
+    .cylinder{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 130px;
+        height: 245px;
+        top: -2vw;
+        &__layer{
+            width: 130px;
+            height: 112px;
+            margin-bottom: -65px;
+        }
+        &__layer:nth-child(1){
+            margin: 0;
+        }
+    }
+    .signature_list{
+        padding-top: 50px;
+    }
+    .signature{
+        & + &{
+            margin-top: 10px;
+        }
+        &__arrow{
+            flex-basis: 10%;
+        }
+        &__text{
+            font-size: 20px;
+            line-height: 27px;
+        }
+        &__icon{
+            margin-left: 15px;
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+@media screen and (max-width: $mobile-screen) {
+    .analysis{
+        margin-top: 40px;
+        &__container{
+            margin: 0 30px;
+        }
+        &__text{
+            max-width: 250px;
+            margin: 5px auto 0;
+        }
+    }
+    .cylinder{
+        width: 130px;
+        height: 245px;
+        top: -2vw;
+        &__layer{
+            width: 130px;
+            height: 112px;
+        }
+        &__layer:nth-child(3){
+            top: -200px;
+        }
+        &__layer:nth-child(2){
+            top: -30px;
+        }
+        &__layer:nth-child(1){
+            top: 140px;
+        }
     }
 }
