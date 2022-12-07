@@ -9,7 +9,7 @@
         position: relative;
     }
 }
-.scheme{
+.analysis__scheme{
     display: flex;
     align-items: center;
 }
@@ -51,9 +51,9 @@
             max-width: 675px;
             margin: 10px auto 0;
         }
-    }
-    .scheme{
-        height: 490px;
+        &__scheme{
+            height: 490px;
+        }
     }
     .cylinder{
         width: 260px;
@@ -142,7 +142,7 @@
             margin: 5px auto 0;
         }
     }
-    .scheme{
+    .analysis__scheme{
         height: 200px;
     }
     .cylinder{

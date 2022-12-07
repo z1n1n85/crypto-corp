@@ -57,7 +57,7 @@ export const scss = () => {
 }
 
 export const js = () => {
-    return gulp.src('src/**/*.js')
+    return gulp.src('src/js/*.js')
         .pipe(jsmin())
         .pipe(gulp.dest('dist/js'))
         .pipe(sync.stream());

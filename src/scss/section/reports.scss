@@ -22,4 +22,42 @@
         margin-right: 5px;
         margin-left: 5px;
     }
+    &__scheme{
+        margin-top: 75px;
+        display: flex;
+        align-items: center;
+    }
+    &__device{
+        margin-right: 5vw;
+    }
+}
+.function-item{
+    max-width: 275px;
+    &::marker{
+        color: #FFFFFF;
+    }
+    & .text{
+        display: inline-block;
+        & + .text{
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+    }
+    &#function-item-1{
+        margin-left: 1vw;
+        margin-bottom: 3vw;
+    }
+    &#function-item-2{
+        margin-left: 4vw;
+        margin-bottom: 3vw;
+    }
+}
+@media screen and (min-width: $tablet-screen) {
+    
+}
+@media screen and (max-width: $tablet-screen) {
+    
+}
+@media screen and (max-width: $mobile-screen) {
+    
 }
