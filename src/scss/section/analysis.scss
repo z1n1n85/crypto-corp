@@ -2,6 +2,8 @@
 // ANALYSIS==================================================================
 
 .cylinder{
+    display: flex;
+    flex-direction: column-reverse;
     position: relative;
     &__layer{
         position: relative;
@@ -11,7 +13,7 @@
     display: flex;
     align-items: center;
 }
-.signature_list{
+.signature-list{
     width: 100%;
     height: fit-content;
 }
@@ -28,9 +30,6 @@
         flex-grow: 1;
         margin-left: 15px;
     }
-    &__text{
-        width: fit-content;
-    }
     &__text-wrapper{
         padding: 5px;
         text-align: center;
@@ -46,7 +45,7 @@
     .analysis{
         margin-top: 150px;
         &__container{
-            margin: 0 165px;
+            margin: 0 8.5vw;
         }
         &__text{
             max-width: 675px;
@@ -57,8 +56,6 @@
         height: 490px;
     }
     .cylinder{
-        display: flex;
-        flex-direction: column-reverse;
         width: 260px;
         height: 430px;
         top: -2vw;
@@ -71,7 +68,7 @@
             margin: 0;
         }
     }
-    .signature_list{
+    .signature-list{
         margin-top: -30px;
     }
     .signature{
@@ -80,6 +77,11 @@
         }
         &__arrow{
             flex-basis: 15%;
+        }
+        &__text{
+            width: fit-content;
+            font-size: max(19px, 2vw);
+            line-height: max(25px, 3vw);
         }
     }
 }
@@ -95,8 +97,6 @@
         }
     }
     .cylinder{
-        display: flex;
-        flex-direction: column-reverse;
         width: 130px;
         height: 245px;
         top: -2vw;
@@ -109,8 +109,8 @@
             margin: 0;
         }
     }
-    .signature_list{
-        padding-top: 50px;
+    .signature-list{
+        padding-top: 30px;
     }
     .signature{
         & + &{
@@ -120,8 +120,9 @@
             flex-basis: 10%;
         }
         &__text{
-            font-size: 20px;
-            line-height: 27px;
+            font-size: min(4vw, 20px);
+            width: fit-content;
+            line-height: min(5.5vw, 27px);
         }
         &__icon{
             margin-left: 15px;
@@ -134,12 +135,15 @@
     .analysis{
         margin-top: 40px;
         &__container{
-            margin: 0 30px;
+            margin: 0 5vw;
         }
         &__text{
             max-width: 250px;
             margin: 5px auto 0;
         }
+    }
+    .scheme{
+        height: 200px;
     }
     .cylinder{
         width: 130px;
@@ -148,15 +152,23 @@
         &__layer{
             width: 130px;
             height: 112px;
-        }
-        &__layer:nth-child(3){
-            top: -200px;
-        }
-        &__layer:nth-child(2){
-            top: -30px;
+            margin-bottom: -65px;
         }
         &__layer:nth-child(1){
-            top: 140px;
+            margin: 0;
+        }
+    }
+    .signature{
+        &__text{
+            font-size: 14px;
+            
+            line-height: 19px;
+        }
+        &__arrow ~ &__arrow{
+            margin-left: 5px;
+        }
+        &__icon{
+            margin-left: 5px;
         }
     }
 }
