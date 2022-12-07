@@ -2,8 +2,8 @@
     .title{
         font-family: $title-font;
         font-weight: 400;
-        font-size: 2.5vw;
-        line-height: 3vw;
+        font-size: 3vw;
+        line-height: 4vw;
         text-align: center;
         color: white;
         &--big{
@@ -12,11 +12,9 @@
             text-transform: uppercase;
         }
         &--mini{
-            font-size: 27px;
-            line-height: 30px;
+            font-size: 2.5vw;
+            line-height: 3vw;
             text-align: left;
-        }
-        &--black{
             color: black;
         }
     }
@@ -39,6 +37,7 @@
             font-size: 20px;
             line-height: 22px;
             color: black;
+            text-align: left;
         }
     }
 }
@@ -59,6 +58,7 @@
         &--mini{
             font-size: 15px;
             line-height: 16px;
+            text-align: left;
             color: black;
         }
     }
