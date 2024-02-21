@@ -1,3 +1,4 @@
+zasovskiyn
 # crypto-corp
 ## О проекте
 Стэк: SCSS, Gulp
